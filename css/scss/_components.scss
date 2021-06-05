@@ -1,0 +1,69 @@
+%generalHeading{
+  color: $head-color;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+%generalParagraph {
+  color: $p-color;
+  line-height: 2;
+  font-weight: 500;
+}
+
+/* Start overlay component */
+%overlay {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000085;
+}
+
+/* End  overlay component */
+
+/* Start Main Head component*/
+.main-head {
+  text-align: center;
+  i {
+    font-size: 50px;
+    color: #1a1a1acc;
+  }
+  .main-text {
+    h2 {
+      @extend %generalHeading;
+      letter-spacing: 10px;
+      margin: 25px 0;
+    }
+    p {
+      @extend %generalParagraph;
+      width: 800px;
+      max-width: 100%;
+      margin: 0 auto 50px;
+    }
+  }
+}
+/* End Main Head component */
+
+/* Start Services component */
+%servicesEffect {
+  background-color: white;
+  padding: 35px 15px 20px;
+  box-shadow: 8px 8px 15px 0 #ddd;
+}
+/* End Services component */
+
+/* Start  Quote same property */
+%sameQ {
+  @extend %generalParagraph;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+}
+%sameSpan {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10px;
+}
+/* End  Quote same property */
